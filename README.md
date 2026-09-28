@@ -25,17 +25,20 @@ MIS Interest Match is a modern web application designed for Computer Science stu
    npm install
    ```
 3. **Environment Setup**:  
-   Copy `.env.example` to `.env` and fill in your PostgreSQL database variables.
+   - Install PostgreSQL 15+ locally if not already installed.
+   - Copy `.env.example` to `.env` and configure your local PostgreSQL database variables.
    ```bash
-   DATABASE_URL="postgresql://user:password@localhost:5432/mis_db"
+   DATABASE_URL="postgresql://postgres:YOUR_PASSWORD@localhost:5432/mis_db"
    ```
-4. **Database Migration & Seeding**:  
-   Initialize the PostgreSQL database and insert required base data:
+4. **Database Setup**:  
+   Create the database in your local PostgreSQL:
+   ```bash
+   createdb -U postgres mis_db
+   ```
+   Initialize the PostgreSQL database schema and generate Prisma client:
    ```bash
    npx prisma migrate dev
    npx prisma generate
-   npx ts-node prisma/seed-interests.ts
-   npx ts-node seed.ts
    ```
 5. **Run the Development Server**:  
    ```bash
