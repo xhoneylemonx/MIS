@@ -1,0 +1,120 @@
+
+> interest-match@0.1.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of c:\Users\Windows\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * c:\Users\Windows\OneDrive\Desktop\MIS\package-lock.json
+
+   ▲ Next.js 15.5.25
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings in 8.1s
+
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+Attempted import error: 'leaveActivity' is not exported from '@/lib/data/activities' (imported as 'leaveActivity').
+
+Import trace for requested module:
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+Attempted import error: 'joinActivity' is not exported from '@/lib/data/activities' (imported as 'joinActivity').
+
+Import trace for requested module:
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+
+./src/app/(student)/activities/create/page.tsx
+Attempted import error: 'createActivity' is not exported from '@/lib/data/activities' (imported as 'createActivity').
+
+Import trace for requested module:
+./src/app/(student)/activities/create/page.tsx
+
+./src/app/(student)/dashboard/DashboardClient.tsx
+Attempted import error: 'calculateMatch' is not exported from '@/lib/services/matching' (imported as 'calculateMatch').
+
+Import trace for requested module:
+./src/app/(student)/dashboard/DashboardClient.tsx
+
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+Attempted import error: 'leaveGroup' is not exported from '@/lib/data/groups' (imported as 'leaveGroup').
+
+Import trace for requested module:
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+Attempted import error: 'joinGroup' is not exported from '@/lib/data/groups' (imported as 'joinGroup').
+
+Import trace for requested module:
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+
+./src/app/(student)/groups/create/page.tsx
+Attempted import error: 'createGroup' is not exported from '@/lib/data/groups' (imported as 'createGroup').
+
+Import trace for requested module:
+./src/app/(student)/groups/create/page.tsx
+
+ ⚠ Compiled with warnings in 18.3s
+
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+Attempted import error: 'leaveActivity' is not exported from '@/lib/data/activities' (imported as 'leaveActivity').
+
+Import trace for requested module:
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+Attempted import error: 'joinActivity' is not exported from '@/lib/data/activities' (imported as 'joinActivity').
+
+Import trace for requested module:
+./src/app/(student)/activities/[id]/ActivityDetailClient.tsx
+
+./src/app/(student)/activities/create/page.tsx
+Attempted import error: 'createActivity' is not exported from '@/lib/data/activities' (imported as 'createActivity').
+
+Import trace for requested module:
+./src/app/(student)/activities/create/page.tsx
+
+./src/app/(student)/dashboard/DashboardClient.tsx
+Attempted import error: 'calculateMatch' is not exported from '@/lib/services/matching' (imported as 'calculateMatch').
+
+Import trace for requested module:
+./src/app/(student)/dashboard/DashboardClient.tsx
+
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+Attempted import error: 'leaveGroup' is not exported from '@/lib/data/groups' (imported as 'leaveGroup').
+
+Import trace for requested module:
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+Attempted import error: 'joinGroup' is not exported from '@/lib/data/groups' (imported as 'joinGroup').
+
+Import trace for requested module:
+./src/app/(student)/groups/[id]/GroupDetailClient.tsx
+
+./src/app/(student)/groups/create/page.tsx
+Attempted import error: 'createGroup' is not exported from '@/lib/data/groups' (imported as 'createGroup').
+
+Import trace for requested module:
+./src/app/(student)/groups/create/page.tsx
+
+ ✓ Compiled successfully in 26.6s
+   Linting and checking validity of types ...
+Failed to compile.
+
+./prisma/seed-interests.ts:116:7
+Type error: Type '{ name: string; }' is not assignable to type 'InterestCategoryWhereUniqueInput'.
+  Type '{ name: string; }' is not assignable to type '{ id: string; } & { id?: string | undefined; AND?: InterestCategoryWhereInput | InterestCategoryWhereInput[] | undefined; ... 5 more ...; interests?: InterestListRelationFilter | undefined; }'.
+    Property 'id' is missing in type '{ name: string; }' but required in type '{ id: string; }'.
+
+[0m [90m 114 |[39m   [36mfor[39m ([36mconst[39m cat [36mof[39m [33mCATEGORIES[39m) {
+ [90m 115 |[39m     [36mconst[39m result [33m=[39m [36mawait[39m prisma[33m.[39minterestCategory[33m.[39mupsert({
+[31m[1m>[22m[39m[90m 116 |[39m       where[33m:[39m { name[33m:[39m cat[33m.[39mname }[33m,[39m
+ [90m     |[39m       [31m[1m^[22m[39m
+ [90m 117 |[39m       update[33m:[39m { icon[33m:[39m cat[33m.[39micon[33m,[39m color[33m:[39m cat[33m.[39mcolor }[33m,[39m
+ [90m 118 |[39m       create[33m:[39m { name[33m:[39m cat[33m.[39mname[33m,[39m icon[33m:[39m cat[33m.[39micon[33m,[39m color[33m:[39m cat[33m.[39mcolor }[33m,[39m
+ [90m 119 |[39m     })[33m;[39m[0m
+Next.js build worker exited with code: 1 and signal: null

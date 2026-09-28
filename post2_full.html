@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	สำนักบริหารและพัฒนาวิชาการ
+</title><link href="css/bootstrap.min.css" rel="stylesheet" /><link href="css/font-awesome.css" rel="stylesheet" /><link href="css/style.css" rel="stylesheet" /><link href="css/styleV2.css" rel="stylesheet" /><link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+<style type="text/css">
+    body {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
+</style>
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./studentList.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyOTI0MzQ5NA9kFgJmD2QWAgIDD2QWBGYPZBYMAgEPEA8WAh4LXyFEYXRhQm91bmRnZBAVEjDguJzguKXguLTguJXguIHguKPguKPguKHguIHguLLguKPguYDguIHguKnguJXguKNO4Lin4Li04Lio4Lin4LiB4Lij4Lij4Lih4LmB4Lil4Liw4Lit4Li44LiV4Liq4Liy4Lir4LiB4Lij4Lij4Lih4LmA4LiB4Lip4LiV4LijIeC4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C5jDzguKfguLTguJfguKLguLLguKXguLHguKLguJrguKPguLTguKvguLLguKPguKjguLLguKrguJXguKPguYwk4Lia4Lij4Li04Lir4Liy4Lij4LiY4Li44Lij4LiB4Li04LiIQ+C4oeC4q+C4suC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC5geC4oeC5iOC5guC4iOC5iS3guIrguLjguKHguJ7guKNw4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmB4Lih4LmI4LmC4LiI4LmJIC0g4LmB4Lie4Lij4LmIIOC5gOC4ieC4peC4tOC4oeC4nuC4o+C4sOC5gOC4geC4teC4ouC4o+C4leC4tDbguJ7guLHguJLguJnguLLguIHguLLguKPguJfguYjguK3guIfguYDguJfguLXguYjguKLguKdm4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14LiB4Liy4Lij4Lib4Lij4Liw4Lih4LiH4LmB4Lil4Liw4LiX4Lij4Lix4Lie4Lii4Liy4LiB4Lij4LiX4Liy4LiH4LiZ4LmJ4LizIeC5gOC4qOC4o+C4qeC4kOC4qOC4suC4quC4leC4o+C5jB7guKjguLTguKXguJvguKjguLLguKrguJXguKPguYw84Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lie4Lil4Lix4LiH4LiH4Liy4LiZ4LiX4LiU4LmB4LiX4LiZMOC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC4meC4suC4meC4suC4iuC4suC4leC4tD/guKrguLLguKPguKrguJnguYDguJfguKjguYHguKXguLDguIHguLLguKPguKrguLfguYjguK3guKrguLLguKN44Liq4LiW4Liy4Lib4Lix4LiV4Lii4LiB4Lij4Lij4Lih4Lio4Liy4Liq4LiV4Lij4LmM4LmB4Lil4Liw4LiB4Liy4Lij4Lit4Lit4LiB4LmB4Lia4Lia4Liq4Li04LmI4LiH4LmB4Lin4LiU4Lil4LmJ4Lit4LihQuC4quC4seC4leC4p+C4qOC4suC4quC4leC4o+C5jOC5geC4peC4sOC5gOC4l+C4hOC5guC4meC5guC4peC4ouC4tSTguJ7guKLguLLguJrguLLguKXguKjguLLguKrguJXguKPguYwq4Liq4Lix4LiV4Lin4LmB4Lie4LiX4Lii4Lio4Liy4Liq4LiV4Lij4LmMFRIBMQEzATQBNQE2ATcBOAE5AjEwAjEyAjE0AjE1AjE2AjE4AjE5AjIyAjMwAjMxFCsDEmdnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAgJkAgMPEA8WAh8AZ2QQFSEEMjU2OQQyNTY4BDI1NjcEMjU2NgQyNTY1BDI1NjQEMjU2MwQyNTYyBDI1NjEEMjU2MAQyNTU5BDI1NTgEMjU1NwQyNTU2BDI1NTUEMjU1NAQyNTUzBDI1NTIEMjU1MQQyNTUwBDI1NDkEMjU0OAQyNTQ3BDI1NDYEMjU0NQQyNTQ0BDI1NDMEMjU0MgQyNTQxBDI1NDAEMjUzOQQyNTM4BDI1MzcVIQQyNTY5BDI1NjgEMjU2NwQyNTY2BDI1NjUEMjU2NAQyNTYzBDI1NjIEMjU2MQQyNTYwBDI1NTkEMjU1OAQyNTU3BDI1NTYEMjU1NQQyNTU0BDI1NTMEMjU1MgQyNTUxBDI1NTAEMjU0OQQyNTQ4BDI1NDcEMjU0NgQyNTQ1BDI1NDQEMjU0MwQyNTQyBDI1NDEEMjU0MAQyNTM5BDI1MzgEMjUzNxQrAyFnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIGDxAPFgIfAGdkEBUN3gE2NTYwNDExMiA6IOC4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C4oeC4q+C4suC4muC4seC4k+C4keC4tOC4lSDguKrguLLguILguLLguKfguLTguIrguLLguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguYzguYHguKXguLDguYDguJfguITguYLguJnguYLguKXguKLguLXguJnguLLguYLguJkgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LmC4LiXICDguJvguIHguJXguLTAATY1MzA0MDEwIDog4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC4p+C4tOC4l+C4ouC4suC4geC4suC4o+C4hOC4reC4oeC4nuC4tOC4p+C5gOC4leC4reC4o+C5jCA0IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tLoBNjU2MDQwMjIgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguKHguKvguLLguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14LiK4Li14Lin4Lig4Liy4LieIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC5guC4lyAg4Lib4LiB4LiV4Li0zAE2NTMwNDAyMCA6IOC4q+C4peC4seC4geC4quC4ueC4leC4o+C4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C4muC4seC4k+C4keC4tOC4lSDguKrguLLguILguLLguKfguLTguIrguLLguYDguJfguITguYLguJnguYLguKXguKLguLXguIrguLXguKfguKDguLLguJ4gNCDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLSrATY1MzA0MDMwIDog4Lir4Lil4Lix4LiB4Liq4Li54LiV4Lij4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC5gOC4hOC4oeC4tSA0IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNIBNjUzMDQwNTAgOiDguKvguKXguLHguIHguKrguLnguJXguKPguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Liq4Liy4Lij4Liq4LiZ4LmA4LiX4LioIDQg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0vQE2NTMwNDA2MCA6IOC4q+C4peC4seC4geC4quC4ueC4leC4o+C4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C4muC4seC4k+C4keC4tOC4lSDguKrguLLguILguLLguKfguLTguIrguLLguITguJPguLTguJXguKjguLLguKrguJXguKPguYwgNCDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLTMATY1MzA0MTMwIDog4Lir4Lil4Lix4LiB4Liq4Li54LiV4Lij4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC4n+C4tOC4quC4tOC4geC4quC5jOC4m+C4o+C4sOC4ouC4uOC4geC4leC5jCA0IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tMkBNjU2MDQxMjIgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguKHguKvguLLguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Liq4Li04LmI4LiH4LmB4Lin4LiU4Lil4LmJ4Lit4LihIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC5guC4lyAg4Lib4LiB4LiV4Li0xgE2NTMwNDA4MCA6IOC4q+C4peC4seC4geC4quC4ueC4leC4o+C4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C4muC4seC4k+C4keC4tOC4lSDguKrguLLguILguLLguKfguLTguIrguLLguJnguKfguLHguJXguIHguKPguKPguKHguKfguLHguKrguJTguLggNCDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLThATY1MzA0MTAwIDog4Lir4Lil4Lix4LiB4Liq4Li54LiV4Lij4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC4meC4p+C4seC4leC4geC4o+C4o+C4oeC5gOC4hOC4oeC4teC4reC4uOC4leC4quC4suC4q+C4geC4o+C4o+C4oSA0IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tOoBNjUzMDQwNDAgOiDguKvguKXguLHguIHguKrguLnguJXguKPguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4Liq4LiW4Li04LiV4Li04LmB4Lil4Liw4LiB4Liy4Lij4LiI4Lix4LiU4LiB4Liy4Lij4Liq4Liy4Lij4Liq4LiZ4LmA4LiX4LioIDQg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0tgE2NjMwNDE1MCA6IOC4p+C4tOC4l+C4ouC4suC4geC4suC4o+C4geC4suC4o+C4q+C4suC4oOC4suC4p+C4sOC4l+C4teC5iOC5gOC4q+C4oeC4suC4sOC4quC4oeC4l+C4suC4h+C4reC4uOC4leC4quC4suC4q+C4geC4o+C4o+C4oSA0IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tBUNCDY1NjA0MTEyCDY1MzA0MDEwCDY1NjA0MDIyCDY1MzA0MDIwCDY1MzA0MDMwCDY1MzA0MDUwCDY1MzA0MDYwCDY1MzA0MTMwCDY1NjA0MTIyCDY1MzA0MDgwCDY1MzA0MTAwCDY1MzA0MDQwCDY2MzA0MTUwFCsDDWdnZ2dnZ2dnZ2dnZ2dkZAIKDw8WAh4EVGV4dAXDAzxhIHN0eWxlPSdsaW5lLWhlaWdodDoyMHB4OycgaHJlZj0nc3R1ZGVudExpc3RQcmludE91dC5hc3B4P3Byb2dyYW1pZD02NTMwNDAxMCZhZG1pdGFjYWR5ZWFyPTI1NjcnIHRhcmdldD0nX2JsYW5rJz48aSBjbGFzcz0nZmEgZmEtY2xvdWQtZG93bmxvYWQnPjwvaT4g4Lij4Liy4Lii4LiK4Li34LmI4Lit4LiZ4Lix4LiB4Lio4Li24LiB4Lip4LiyIDY1MzA0MDEwIDog4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC4p+C4tOC4l+C4ouC4suC4geC4suC4o+C4hOC4reC4oeC4nuC4tOC4p+C5gOC4leC4reC4o+C5jCA0IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tCDguKPguLHguJrguYDguILguYnguLLguJvguLXguIHguLLguKPguKjguLbguIHguKnguLIgMjU2NzwvYT5kZAIODw9kDxAWAWYWARYCHg5QYXJhbWV0ZXJWYWx1ZQUBNBYBZmRkAhAPD2QPEBYCZgIBFgIWAh8CBQE0FgIfAgUEMjU2NxYCZmZkZAIBDw9kDxAWAWYWARYCHwIFAzQyNRYBZmRkZPRmb89WfN1YaAeoG2UijR/dhqVJIqG+oXgkeEg9lKFL" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48DA28C6" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAEVwKoB5grwZkNW1e6Ux9Xcc9DMJbt0OZZkOySTEEjDFiYUZ99b2eBFPMRM9PW87Z6459pehpzNy9Jz1WOeg/M7udAOz2xQjGjD2u2SfyjzVqp6jCcTeGYuNd1HdvKC+U9BjNkAAM+4Vb/0THubkigaibcuRUeamMItPVZGd5Insr4mS7991Uac/Kw/bwbvzrx+dRRo/7r5kqH6KjWqWLN3g7+iGEY+dzEknH6in9AJbBfjnlYgPe5T/BnvXiBWzYiPrkoHYlhO5qdqHE1FA3h5NMigZHaP96g92GrBLL1wrJZGJgtQ8gh7w/DgfEwcbsdcHv8/IDBRRa9sbUA99VjNPemrxBb2o8IL/gEaDa3rR6LFAxQuA3HZPAUr5Do9L4vCt2HtiaAKvyi4Zigcz7WSpiz0KRiCFNWBrlVeNAFQqlKkEBc1DBnCh6MNWr4EYNcZAB4uLdZ8y5lK1pXm9sItC2FaUzX59NqVGSzhZ+i3FaOpKCkRV6OXAU5XvMu9TFmGws/TiHev7Jxxuh/EHUMR3oWqNwoDp7TVqVlc2E/XLTpyib7SOhwsc0fR8j+7sQKjVIGzHbSypFVqWgKspXMLNu62X2wo0RgUjfsuWmTZK5RdRKRoMMwK9BlnYm72uiukwMPM4kCqWvGFZCM5aKwIVyRiCcf8Fhvx8fTQ6ZJprkr1kSeFpsAHQEtvl2EoVRZ6DsD7uzZ+uLr4OevcKe7uSNrnZb49DradJ5oXOUVcUNrW5TMlB5T6Yda/teAVrVRsFF5Orwrb0Zj6Squ4zBmaZrhtharXhNNpgB7m5My8fD5aeygIhVUGtAEWVNcuEfo4N4F0BNFa5NzTcQZK+mkNc2hg8i0N3d++xaYX6zpd98GeCzkPXtrYtDialnoMhdafd59psRG049EHZYVMoqH2EbT2+2jYlcRWt2Bjnp31mIjzqwWU3lJiE6dQSvOM7qBMJyqhR/cwXUfXCN0lI1B9hUGHnYQhsZ+Xy9Tc0uvwIJgnADp9QNftYXMiboJgTOb6QPP2UCleDjC/NJ8NRNPVKUiK7+D2SuuHQKHVVbLABMRDsVJ9aTeggq0g6xFqjqG3PVBs7g9eUPOG6O1i5ACAUPBglgVzTvP8GRnCDIWkq4mTXlOwyWL7QOCJHwKbyEew6HgC8vg9NSNW8xGlIrAE8KQKxjBzL1Fgsxw3gUSsGqIR5EuPizMY5AZDsz5O+GKn+7rrYpLvL8TIYJ4NMJuBHUbkJavj6UJ/hou7p5BKkIhqS+j9TClHP8o58820unON1HtaAVSsldHs4kmWLireOo4BaT8ZD554zrFFE2uHUUxcRfFkx2xu8ARF7zG8yA97StSA/UlXRObjGXgirvjUlxVARfB8FSdhoByZam9mNqlFrjCqZlyrz6YuGxArDH44r7QjcPBJ9Wk5S9t7Kz1uAjDu35o5CUn6umW4JNpE1p/Fdy1t3/wtUMzUDsYEqg2btL1Ew204buQLX97ddquWvvtARLmswj9oZHqUT7h0sXg==" />
+</div>
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="logo-section">
+                <div class="logo">
+<img src="img/mju_logo.png" />
+                </div>
+                <div class="org-name">
+                    <h1>สำนักบริหารและพัฒนาวิชาการ</h1>
+                    <p>Office of Academic Administration and Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a target='_self' href='Default.aspx'>หน้าแรก</a></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>สมัครเรียน <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_blank' href='http://www.admissions.mju.ac.th/'><i class='fa fa-angle-right'></i> สมัครเรียนระดับ ป.ตรี</a></li><li><a target='_blank' href='https://admissions.mju.ac.th/graduate/Default.aspx'><i class='fa fa-angle-right'></i> สมัครเรียนระดับ ป.โท-เอก</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ระบบสารสนเทศ <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_blank' href='../Student'><i class='fa fa-angle-right'></i> สำหรับนักศึกษา</a></li><li><a target='_blank' href='../informationSystem'><i class='fa fa-angle-right'></i> สำหรับบุคลากร</a></li><li><a target='_blank' href='../Parent'><i class='fa fa-angle-right'></i> สำหรับผู้ปกครอง</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ข้อมูล <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='ProgramInfo.aspx'><i class='fa fa-angle-right'></i> หลักสูตรที่เปิดสอน</a></li><li><a target='_self' href='StudentList.aspx'><i class='fa fa-angle-right'></i> รายชื่อนักศึกษา</a></li><li><a target='_self' href='../ExamSchedule'><i class='fa fa-angle-right'></i> ตารางสอบ & ตารางกำกับห้องสอบ</a></li><li><a target='_self' href='GraduateList.aspx'><i class='fa fa-angle-right'></i> รายชื่อผู้สำเร็จการศึกษา</a></li><li><a target='_self' href='GraduateQualificationCheck.aspx'><i class='fa fa-angle-right'></i> ตรวจสอบคุณวุฒิผู้สำเร็จการศึกษา</a></li><li><a target='_self' href='CourseDescription.aspx'><i class='fa fa-angle-right'></i> คำอธิบายรายวิชา</a></li><li><a target='_self' href='Document.aspx?sID=1&gID=4'><i class='fa fa-angle-right'></i> ระเบียบ ประกาศ ข้อบังคับ</a></li><li><a target='_self' href='ProgramList.aspx'><i class='fa fa-angle-right'></i> แผนการศึกษา ป.ตรี</a></li><li><a target='_blank' href='../Stat'><i class='fa fa-angle-right'></i> ข้อมูลสถิติ</a></li><li><a target='_self' href='Search.aspx'><i class='fa fa-angle-right'></i> ค้นหาภายในเว็บไซต์</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>เอกสาร <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='DocumentGroup.aspx?sID=1'><i class='fa fa-angle-right'></i> เอกสารฝ่ายหลักสูตร</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=2'><i class='fa fa-angle-right'></i> เอกสารฝ่ายทะเบียน</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=4'><i class='fa fa-angle-right'></i> เอกสารฝ่ายสหกิจศึกษา</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=3'><i class='fa fa-angle-right'></i> เอกสารฝ่ายบัณฑิตศึกษา</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=5'><i class='fa fa-angle-right'></i> เอกสารกองบริหารงานสำนักฯ</a></li><li><a target='_self' href='DocumentSearch.aspx'><i class='fa fa-angle-right'></i> ค้นหาเอกสาร</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>แบบฟอร์ม <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='../www/Document.aspx?sID=6&gID=1'><i class='fa fa-angle-right'></i> แบบฟอร์มสำหรับนักศึกษา</a></li><li><a target='_self' href='Document.aspx?sID=7&gID=7'><i class='fa fa-angle-right'></i> แบบฟอร์มสำหรับอาจารย์</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=1'><i class='fa fa-angle-right'></i> แบบฟอร์มเอกสาร มคอ.</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ปฏิทิน <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='../www/Document.aspx?sID=2&gID=13'><i class='fa fa-angle-right'></i> ปฏิทินการศึกษา</a></li><li><a target='_self' href='../www/Document.aspx?sID=2&gID=41'><i class='fa fa-angle-right'></i> รอบอนุมัติสำเร็จการศึกษา</a></li><li><a target='_self' href='/www/Document.aspx?sID=1&gID=19'><i class='fa fa-angle-right'></i> ปฏิทินดำเนินการ ม���อ.</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ข้อมูลสำนัก <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='Staff.aspx'><i class='fa fa-angle-right'></i> บุคลากรสำนัก</a></li><li><a target='_self' href='About.aspx'><i class='fa fa-angle-right'></i> ข้อมูลสำนัก</a></li><li><a target='_self' href='Contact.aspx'><i class='fa fa-angle-right'></i> ติดต่อสำนัก</a></li><li><a target='_self' href='DirectLine.aspx'><i class='fa fa-angle-right'></i> สายตรงผู้อำนวยการ</a></li></ul></li><li><a target='_blank' href='newsLetterList.aspx'>จดหมายข่าว</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div style="min-height:500px">
+            
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">รายชื่อนักศึกษา (List of Student)</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default" style="border: 2px solid #4CAF50; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                        <div class="panel-heading" style="background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%); color: white;">
+                            <h4 class="panel-title"><i class="fa fa-user"></i> รายชื่อนักศึกษา</h4>
+                        </div>
+                        <div class="panel-body" style="padding: 30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sendertxt">คณะ</label>
+                                        <select name="ctl00$ContentPlaceHolder1$facultydl" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$facultydl\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ContentPlaceHolder1_facultydl" class="form-control">
+	<option value="1">ผลิตกรรมการเกษตร</option>
+	<option value="3">วิศวกรรมและอุตสาหกรรมเกษตร</option>
+	<option selected="selected" value="4">วิทยาศาสตร์</option>
+	<option value="5">วิทยาลัยบริหารศาสตร์</option>
+	<option value="6">บริหารธุรกิจ</option>
+	<option value="7">มหาวิทยาลัยแม่โจ้-ชุมพร</option>
+	<option value="8">มหาวิทยาลัยแม่โจ้ - แพร่ เฉลิมพระเกียรติ</option>
+	<option value="9">พัฒนาการท่องเที่ยว</option>
+	<option value="10">เทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+	<option value="12">เศรษฐศาสตร์</option>
+	<option value="14">ศิลปศาสตร์</option>
+	<option value="15">วิทยาลัยพลังงานทดแทน</option>
+	<option value="16">วิทยาลัยนานาชาติ</option>
+	<option value="18">สารสนเทศและการสื่อสาร</option>
+	<option value="19">สถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม</option>
+	<option value="22">สัตวศาสตร์และเทคโนโลยี</option>
+	<option value="30">พยาบาลศาสตร์</option>
+	<option value="31">สัตวแพทยศาสตร์</option>
+
+</select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sendertxt">ปีเข้าศึกษา</label>
+                                        <select name="ctl00$ContentPlaceHolder1$acadyeardl" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$acadyeardl\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ContentPlaceHolder1_acadyeardl" class="form-control">
+	<option value="2569">2569</option>
+	<option value="2568">2568</option>
+	<option selected="selected" value="2567">2567</option>
+	<option value="2566">2566</option>
+	<option value="2565">2565</option>
+	<option value="2564">2564</option>
+	<option value="2563">2563</option>
+	<option value="2562">2562</option>
+	<option value="2561">2561</option>
+	<option value="2560">2560</option>
+	<option value="2559">2559</option>
+	<option value="2558">2558</option>
+	<option value="2557">2557</option>
+	<option value="2556">2556</option>
+	<option value="2555">2555</option>
+	<option value="2554">2554</option>
+	<option value="2553">2553</option>
+	<option value="2552">2552</option>
+	<option value="2551">2551</option>
+	<option value="2550">2550</option>
+	<option value="2549">2549</option>
+	<option value="2548">2548</option>
+	<option value="2547">2547</option>
+	<option value="2546">2546</option>
+	<option value="2545">2545</option>
+	<option value="2544">2544</option>
+	<option value="2543">2543</option>
+	<option value="2542">2542</option>
+	<option value="2541">2541</option>
+	<option value="2540">2540</option>
+	<option value="2539">2539</option>
+	<option value="2538">2538</option>
+	<option value="2537">2537</option>
+
+</select>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sendertxt">ระบุหลักสูตร</label>
+               <select name="ctl00$ContentPlaceHolder1$programdl" id="ctl00_ContentPlaceHolder1_programdl" class="form-control">
+	<option value="65604112">65604112 : วิทยาศาสตรมหาบัณฑิต สาขาวิชาวิทยาศาสตร์และเทคโนโลยีนาโน 2 ปี ปริญญาโท  ปกติ</option>
+	<option value="65304010">65304010 : วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65604022">65604022 : วิทยาศาสตรมหาบัณฑิต สาขาวิชาเทคโนโลยีชีวภาพ 2 ปี ปริญญาโท  ปกติ</option>
+	<option value="65304020">65304020 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีชีวภาพ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65304030">65304030 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเคมี 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65304050">65304050 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65304060">65304060 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาคณิตศาสตร์ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65304130">65304130 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาฟิสิกส์ประยุกต์ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65604122">65604122 : วิทยาศาสตรมหาบัณฑิต สาขาวิชาเทคโนโลยีสิ่งแวดล้อม 2 ปี ปริญญาโท  ปกติ</option>
+	<option value="65304080">65304080 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชานวัตกรรมวัสดุ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65304100">65304100 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชานวัตกรรมเคมีอุตสาหกรรม 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65304040">65304040 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาสถิติและการจัดการสารสนเทศ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="66304150">66304150 : วิทยาการการหาภาวะที่เหมาะสมทางอุตสาหกรรม 4 ปี ปริญญาตรี  ปกติ</option>
+
+</select> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$Button1" value="ตกลง" id="ctl00_ContentPlaceHolder1_Button1" class="btn btn-submit btn-lg" />
+                            </div>
+
+                            <div class="text-center" style="margin-top:20px">
+                                <span id="ctl00_ContentPlaceHolder1_linklb"><a style='line-height:20px;' href='studentListPrintOut.aspx?programid=65304010&admitacadyear=2567' target='_blank'><i class='fa fa-cloud-download'></i> รายชื่อนักศึกษา 65304010 : วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ 4 ปี ปริญญาตรี  ปกติ รับเข้าปีการศึกษา 2567</a></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+              
+        
+                
+
+
+            </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row" style="text-align:left;">
+                <div class="col-md-4">
+                    <h4 style="color:#fff">สำนักบริหารและพัฒนาวิชาการ</h4>
+                    <p>มหาวิทยาลัยแม่โจ้</p>
+                    <p><i class="fa fa-map-marker"></i> เลขที่ 63 หมู่ที่ 4 <br/>อาคารอำนวย ยศสุข ชั้น 2-3<br/> ตำบลหนองหาร อำเภอสันทราย<br/>จังหวัดเชียงใหม่ 50290</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color:#fff">ติดต่อเรา</h4>
+                    <p><i class="fa fa-phone"></i> กองบริหารงานสำนัก 053-873450 และ 053-873452</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายทะเบียน 053-873458 และ 053-873459</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายพัฒนาการศึกษาและหลักสูตร 053-873453-5</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายสหกิจศึกษา 053-873476-9</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color:#fff">ติดต่อเรา</h4>                    
+                    <p><i class="fa fa-phone"></i> ฝ่ายบัณฑิตศึกษา 053-875520-4</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายรับสมัครนักศึกษาใหม่ ระดับบัณฑิตศึกษา (ป.โท-เอก) 053-873461</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายรับสมัครนักศึกษาใหม่ ระดับปริญญาตรี 053-873460</p>
+                    <p><i class="fa fa-phone"></i> งานสื่อสิ่งพิมพ์ 053-873476-7</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0 20px;" />
+            <div style="text-align: center;">
+                <p>&copy; 2025 Office of Academic Administration and Development. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+  
+<input type="hidden" name="ctl00$subMenuIdlb" id="ctl00_subMenuIdlb" value="425" />
+
+<script src="js/new/jquery.min.js"></script>
+<script src="js/new/bootstrap.min.js"></script>
+
+    </form>
+</body>
+</html>

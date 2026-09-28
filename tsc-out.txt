@@ -1,0 +1,98 @@
+prisma/seed-interests.ts(116,7): error TS2322: Type '{ name: string; }' is not assignable to type 'InterestCategoryWhereUniqueInput'.
+  Type '{ name: string; }' is not assignable to type '{ id: string; } & { id?: string | undefined; AND?: InterestCategoryWhereInput | InterestCategoryWhereInput[] | undefined; ... 5 more ...; interests?: InterestListRelationFilter | undefined; }'.
+    Property 'id' is missing in type '{ name: string; }' but required in type '{ id: string; }'.
+prisma/seed-interests.ts(135,18): error TS2353: Object literal may only specify known properties, and 'nameLower' does not exist in type 'InterestWhereUniqueInput'.
+prisma/seed-interests.ts(136,73): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type 'Without<InterestUpdateInput, InterestUncheckedUpdateInput> & InterestUncheckedUpdateInput'.
+prisma/seed-interests.ts(139,11): error TS2353: Object literal may only specify known properties, and 'nameLower' does not exist in type 'Without<InterestCreateInput, InterestUncheckedCreateInput> & InterestUncheckedCreateInput'.
+prisma/seed-interests.ts(154,7): error TS2322: Type '{ label: string; }' is not assignable to type 'LookingForOptionWhereUniqueInput'.
+  Type '{ label: string; }' is not assignable to type '{ id: string; } & { id?: string | undefined; AND?: LookingForOptionWhereInput | LookingForOptionWhereInput[] | undefined; ... 4 more ...; students?: StudentLookingForListRelationFilter | undefined; }'.
+    Property 'id' is missing in type '{ label: string; }' but required in type '{ id: string; }'.
+seed.ts(17,17): error TS2561: Object literal may only specify known properties, but 'lookingFor' does not exist in type '(Without<StudentCreateInput, StudentUncheckedCreateInput> & StudentUncheckedCreateInput) | (Without<...> & StudentCreateInput)'. Did you mean to write 'lookingFors'?
+seed.ts(17,37): error TS2551: Property 'lookingFor' does not exist on type 'Student'. Did you mean 'lookingForIds'?
+seed.ts(21,34): error TS2339: Property 'contact' does not exist on type 'Student'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(6,27): error TS2305: Module '"@/lib/data/activities"' has no exported member 'joinActivity'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(6,41): error TS2305: Module '"@/lib/data/activities"' has no exported member 'leaveActivity'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(35,50): error TS2339: Property 'interestIds' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(36,48): error TS2339: Property 'participantIds' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(37,55): error TS2339: Property 'creatorId' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(38,29): error TS2339: Property 'participantIds' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(38,63): error TS2339: Property 'capacity' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(39,61): error TS2339: Property 'creatorId' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(40,35): error TS2339: Property 'participantIds' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(40,68): error TS2339: Property 'capacity' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(45,36): error TS2339: Property 'id' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(47,35): error TS2339: Property 'id' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(66,74): error TS2339: Property 'title' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(67,89): error TS2339: Property 'description' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(91,71): error TS2339: Property 'date' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(92,87): error TS2339: Property 'time' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(96,60): error TS2339: Property 'location' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(104,69): error TS2339: Property 'participantIds' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(104,104): error TS2339: Property 'capacity' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(119,32): error TS2339: Property 'map' does not exist on type 'Promise<InterestWithCategory[]>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(119,37): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(143,84): error TS2339: Property 'participantIds' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(145,31): error TS2339: Property 'participantIds' does not exist on type 'Promise<ActivityData | null>'.
+src/app/(student)/activities/[id]/ActivityDetailClient.tsx(145,51): error TS7006: Parameter 'pid' implicitly has an 'any' type.
+src/app/(student)/activities/[id]/page.tsx(12,50): error TS2322: Type 'StudentData[]' is not assignable to type 'Student[]'.
+  Type 'StudentData' is missing the following properties from type 'Student': email, avatar, groupIds, activityIds
+src/app/(student)/activities/create/page.tsx(7,10): error TS2305: Module '"@/lib/data/activities"' has no exported member 'createActivity'.
+src/app/(student)/activities/create/page.tsx(103,33): error TS2339: Property 'map' does not exist on type 'Promise<InterestCategoryData[]>'.
+src/app/(student)/activities/create/page.tsx(103,38): error TS7006: Parameter 'cat' implicitly has an 'any' type.
+src/app/(student)/activities/create/page.tsx(107,47): error TS2339: Property 'filter' does not exist on type 'Promise<InterestWithCategory[]>'.
+src/app/(student)/activities/create/page.tsx(107,55): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/app/(student)/activities/create/page.tsx(107,91): error TS7006: Parameter 'interest' implicitly has an 'any' type.
+src/app/(student)/dashboard/DashboardClient.tsx(8,10): error TS2305: Module '"@/lib/services/matching"' has no exported member 'calculateMatch'.
+src/app/(student)/dashboard/DashboardClient.tsx(27,56): error TS2339: Property 'filter' does not exist on type 'Promise<ActivityData[]>'.
+src/app/(student)/dashboard/DashboardClient.tsx(27,63): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/app/(student)/dashboard/DashboardClient.tsx(28,69): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/app/(student)/dashboard/DashboardClient.tsx(57,54): error TS2339: Property 'length' does not exist on type 'Promise<GroupData[]>'.
+src/app/(student)/dashboard/DashboardClient.tsx(80,32): error TS2339: Property 'map' does not exist on type 'Promise<InterestWithCategory[]>'.
+src/app/(student)/dashboard/DashboardClient.tsx(80,37): error TS7006: Parameter 'interest' implicitly has an 'any' type.
+src/app/(student)/dashboard/DashboardClient.tsx(130,53): error TS7006: Parameter 'activity' implicitly has an 'any' type.
+src/app/(student)/dashboard/page.tsx(7,29): error TS2322: Type 'StudentData[]' is not assignable to type 'Student[]'.
+  Type 'StudentData' is missing the following properties from type 'Student': email, avatar, groupIds, activityIds
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(6,24): error TS2305: Module '"@/lib/data/groups"' has no exported member 'joinGroup'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(6,35): error TS2305: Module '"@/lib/data/groups"' has no exported member 'leaveGroup'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(32,47): error TS2339: Property 'interestIds' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(33,45): error TS2339: Property 'memberIds' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(34,52): error TS2339: Property 'creatorId' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(39,30): error TS2339: Property 'id' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(41,29): error TS2339: Property 'id' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(60,71): error TS2339: Property 'name' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(61,86): error TS2339: Property 'description' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(63,49): error TS2339: Property 'memberIds' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(64,57): error TS2339: Property 'createdAt' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(86,32): error TS2339: Property 'map' does not exist on type 'Promise<InterestWithCategory[]>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(86,37): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(96,76): error TS2339: Property 'memberIds' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(98,28): error TS2339: Property 'memberIds' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(98,43): error TS7006: Parameter 'memberId' implicitly has an 'any' type.
+src/app/(student)/groups/[id]/GroupDetailClient.tsx(113,62): error TS2339: Property 'creatorId' does not exist on type 'Promise<GroupData | null>'.
+src/app/(student)/groups/[id]/page.tsx(12,44): error TS2322: Type 'StudentData[]' is not assignable to type 'Student[]'.
+  Type 'StudentData' is missing the following properties from type 'Student': email, avatar, groupIds, activityIds
+src/app/(student)/groups/create/page.tsx(7,10): error TS2305: Module '"@/lib/data/groups"' has no exported member 'createGroup'.
+src/app/(student)/groups/create/page.tsx(80,33): error TS2339: Property 'map' does not exist on type 'Promise<InterestCategoryData[]>'.
+src/app/(student)/groups/create/page.tsx(80,38): error TS7006: Parameter 'cat' implicitly has an 'any' type.
+src/app/(student)/groups/create/page.tsx(84,47): error TS2339: Property 'filter' does not exist on type 'Promise<InterestWithCategory[]>'.
+src/app/(student)/groups/create/page.tsx(84,55): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/app/(student)/groups/create/page.tsx(84,91): error TS7006: Parameter 'interest' implicitly has an 'any' type.
+src/lib/actions.ts(107,16): error TS2353: Object literal may only specify known properties, and 'nameLower' does not exist in type 'InterestWhereUniqueInput'.
+src/lib/actions.ts(137,9): error TS2353: Object literal may only specify known properties, and 'nameLower' does not exist in type 'Without<InterestCreateInput, InterestUncheckedCreateInput> & InterestUncheckedCreateInput'.
+src/lib/actions.ts(231,16): error TS2353: Object literal may only specify known properties, and 'nameLower' does not exist in type 'InterestWhereUniqueInput'.
+src/lib/actions.ts(240,9): error TS2353: Object literal may only specify known properties, and 'nameLower' does not exist in type 'Without<InterestCreateInput, InterestUncheckedCreateInput> & InterestUncheckedCreateInput'.
+src/lib/actions.ts(292,15): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type '(Without<InterestUpdateInput, InterestUncheckedUpdateInput> & InterestUncheckedUpdateInput) | (Without<...> & InterestUpdateInput)'.
+src/lib/actions.ts(313,38): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type 'InterestWhereInput'.
+src/lib/actions.ts(314,38): error TS2353: Object literal may only specify known properties, and 'isCustom' does not exist in type 'InterestWhereInput'.
+src/lib/actions.ts(321,16): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type 'InterestWhereInput'.
+src/lib/actions.ts(359,23): error TS2551: Property 'category' does not exist on type '{ name: string; id: string; icon: string; categoryId: string; }'. Did you mean 'categoryId'?
+src/lib/actions.ts(360,24): error TS2551: Property 'category' does not exist on type '{ name: string; id: string; icon: string; categoryId: string; }'. Did you mean 'categoryId'?
+src/lib/actions.ts(361,19): error TS2339: Property 'isCustom' does not exist on type '{ name: string; id: string; icon: string; categoryId: string; }'.
+src/lib/actions.ts(362,19): error TS2339: Property 'isActive' does not exist on type '{ name: string; id: string; icon: string; categoryId: string; }'.
+src/lib/actions.ts(363,23): error TS2339: Property '_count' does not exist on type '{ name: string; id: string; icon: string; categoryId: string; }'.
+src/lib/data/activities.ts(51,22): error TS2322: Type 'Date' is not assignable to type 'string | FieldRef<"Activity", "String"> | undefined'.
+src/lib/data/interests.ts(43,14): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type 'InterestWhereInput'.
+src/lib/data/interests.ts(56,31): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type 'InterestWhereInput'.
+src/lib/data/interests.ts(83,26): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type 'InterestWhereInput'.
+src/lib/data/interests.ts(98,7): error TS2353: Object literal may only specify known properties, and 'isActive' does not exist in type 'InterestWhereInput'.
+src/lib/data/interests.ts(121,14): error TS2353: Object literal may only specify known properties, and 'nameLower' does not exist in type 'InterestWhereUniqueInput'.

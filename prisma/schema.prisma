@@ -1,0 +1,161 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model SyncLog {
+  id        String   @id @default(uuid())
+  source    String
+  faculty   String
+  program   String
+  fetched   Int
+  inserted  Int
+  updated   Int
+  skipped   Int
+  failed    Int
+  status    String 
+  createdAt DateTime @default(now())
+}
+
+model Student {
+  id         String   @id @default(uuid())
+  studentId  String   @unique
+  name       String
+  faculty    String
+  program    String
+  year       Int
+  bio        String?
+  dataSource String   @default("SEED")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  interests            StudentInterest[]
+  lookingFors          StudentLookingFor[]
+  groupsCreated        Group[]               @relation("GroupCreator")
+  groupMembers         GroupMember[]
+  activitiesCreated    Activity[]            @relation("ActivityCreator")
+  activityParticipants ActivityParticipant[]
+}
+
+model InterestCategory {
+  id        String     @id @default(uuid())
+  name      String     @unique
+  icon      String
+  color     String
+  interests Interest[]
+}
+
+model Interest {
+  id         String           @id @default(uuid())
+  name       String
+  nameLower  String
+  icon       String
+  categoryId String
+  isCustom   Boolean          @default(false)
+  isActive   Boolean          @default(true)
+  category   InterestCategory @relation(fields: [categoryId], references: [id])
+  
+  students   StudentInterest[]
+  groups     GroupInterest[]
+  activities ActivityInterest[]
+
+  @@unique([nameLower])
+}
+
+model StudentInterest {
+  studentId  String
+  interestId String
+  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  interest   Interest @relation(fields: [interestId], references: [id], onDelete: Cascade)
+
+  @@id([studentId, interestId])
+}
+
+model LookingForOption {
+  id       String              @id @default(uuid())
+  label    String              @unique
+  icon     String
+  students StudentLookingFor[]
+}
+
+model StudentLookingFor {
+  studentId    String
+  lookingForId String
+  student      Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  lookingFor   LookingForOption @relation(fields: [lookingForId], references: [id], onDelete: Cascade)
+
+  @@id([studentId, lookingForId])
+}
+
+model Group {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  coverImage  String?
+  creatorId   String
+  creator     Student  @relation("GroupCreator", fields: [creatorId], references: [id])
+  createdAt   DateTime @default(now())
+
+  members   GroupMember[]
+  interests GroupInterest[]
+}
+
+model GroupMember {
+  groupId   String
+  studentId String
+  group     Group   @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@id([groupId, studentId])
+}
+
+model GroupInterest {
+  groupId    String
+  interestId String
+  group      Group    @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  interest   Interest @relation(fields: [interestId], references: [id], onDelete: Cascade)
+
+  @@id([groupId, interestId])
+}
+
+model Activity {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  date        String
+  time        String
+  location    String
+  capacity    Int
+  coverImage  String?
+  creatorId   String
+  creator     Student  @relation("ActivityCreator", fields: [creatorId], references: [id])
+  createdAt   DateTime @default(now())
+
+  participants ActivityParticipant[]
+  interests    ActivityInterest[]
+}
+
+model ActivityParticipant {
+  activityId String
+  studentId  String
+  activity   Activity @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@id([activityId, studentId])
+}
+
+model ActivityInterest {
+  activityId String
+  interestId String
+  activity   Activity @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  interest   Interest @relation(fields: [interestId], references: [id], onDelete: Cascade)
+
+  @@id([activityId, interestId])
+}

@@ -1,0 +1,17 @@
+TEST RESULTS:
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of c:\Users\Windows\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * c:\Users\Windows\OneDrive\Desktop\MIS\package-lock.json
+
+PASS src/__tests__/sample.test.ts
+  sum function
+    √ adds 1 + 2 to equal 3 (4 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.354 s
+Ran all test suites.

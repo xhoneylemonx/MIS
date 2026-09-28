@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	สำนักบริหารและพัฒนาวิชาการ
+</title><link href="css/bootstrap.min.css" rel="stylesheet" /><link href="css/font-awesome.css" rel="stylesheet" /><link href="css/style.css" rel="stylesheet" /><link href="css/styleV2.css" rel="stylesheet" /><link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+<style type="text/css">
+    body {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
+</style>
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./studentList.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyOTI0MzQ5NA9kFgJmD2QWAgIDD2QWBGYPZBYKAgEPEA8WAh4LXyFEYXRhQm91bmRnZBAVEjDguJzguKXguLTguJXguIHguKPguKPguKHguIHguLLguKPguYDguIHguKnguJXguKNO4Lin4Li04Lio4Lin4LiB4Lij4Lij4Lih4LmB4Lil4Liw4Lit4Li44LiV4Liq4Liy4Lir4LiB4Lij4Lij4Lih4LmA4LiB4Lip4LiV4LijIeC4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C5jDzguKfguLTguJfguKLguLLguKXguLHguKLguJrguKPguLTguKvguLLguKPguKjguLLguKrguJXguKPguYwk4Lia4Lij4Li04Lir4Liy4Lij4LiY4Li44Lij4LiB4Li04LiIQ+C4oeC4q+C4suC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC5geC4oeC5iOC5guC4iOC5iS3guIrguLjguKHguJ7guKNw4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmB4Lih4LmI4LmC4LiI4LmJIC0g4LmB4Lie4Lij4LmIIOC5gOC4ieC4peC4tOC4oeC4nuC4o+C4sOC5gOC4geC4teC4ouC4o+C4leC4tDbguJ7guLHguJLguJnguLLguIHguLLguKPguJfguYjguK3guIfguYDguJfguLXguYjguKLguKdm4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14LiB4Liy4Lij4Lib4Lij4Liw4Lih4LiH4LmB4Lil4Liw4LiX4Lij4Lix4Lie4Lii4Liy4LiB4Lij4LiX4Liy4LiH4LiZ4LmJ4LizIeC5gOC4qOC4o+C4qeC4kOC4qOC4suC4quC4leC4o+C5jB7guKjguLTguKXguJvguKjguLLguKrguJXguKPguYw84Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lie4Lil4Lix4LiH4LiH4Liy4LiZ4LiX4LiU4LmB4LiX4LiZMOC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC4meC4suC4meC4suC4iuC4suC4leC4tD/guKrguLLguKPguKrguJnguYDguJfguKjguYHguKXguLDguIHguLLguKPguKrguLfguYjguK3guKrguLLguKN4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tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNEBNjkxMDEwMTE1IDog4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC5gOC4geC4qeC4leC4o+C4qOC4suC4quC4leC4o+C5jCDguKfguLTguIrguLLguYDguK3guIHguJ7guLfguIrguYTguKPguYggMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLTRATY5MTAxMDExNCA6IOC4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C4muC4seC4k+C4keC4tOC4lSDguKrguLLguILguLLguKfguLTguIrguLLguYDguIHguKnguJXguKPguKjguLLguKrguJXguKPguYwg4Lin4Li04LiK4Liy4LmA4Lit4LiB4Lie4Li34LiK4LmE4Lij4LmIIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li00QE2OTEwMTAxMTMgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNEBNjkxMDEwMTEyIDog4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC5gOC4geC4qeC4leC4o+C4qOC4suC4quC4leC4o+C5jCDguKfguLTguIrguLLguYDguK3guIHguJ7guLfguIrguYTguKPguYggMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLTRATY5MTAxMDExMSA6IOC4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C4muC4seC4k+C4keC4tOC4lSDguKrguLLguILguLLguKfguLTguIrguLLguYDguIHguKnguJXguKPguKjguLLguKrguJXguKPguYwg4Lin4Li04LiK4Liy4LmA4Lit4LiB4Lie4Li34LiK4LmE4Lij4LmIIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li00QE2OTEwMTAxMTAgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTkgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTggOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTcgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTYgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTUgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTQgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTMgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTIgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTEgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tNABNjkxMDEwMTAgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC4nuC4t+C4iuC5hOC4o+C5iCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tFA2NzgwMTAxNyA6IOC4nuC4t+C4iuC5hOC4o+C5iCA1IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguYDguK3guIEgIOC4m+C4geC4leC4tJ8BNjU2MDEwMjIgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguKHguKvguLLguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4Lie4Li34LiK4Liq4Lin4LiZIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC5guC4lyAg4Lib4LiB4LiV4Li0sQE2NTMwMTAyMCA6IOC4q+C4peC4seC4geC4quC4ueC4leC4o+C4p+C4tOC4l+C4ouC4suC4qOC4suC4quC4leC4o+C4muC4seC4k+C4keC4tOC4lSDguKrguLLguILguLLguKfguLTguIrguLLguJ7guLfguIrguKrguKfguJkgNCDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLTkATY1NzAxMTYyIDog4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4Lih4Lir4Liy4Lia4Lix4LiT4LiR4Li04LiVIOC4quC4suC4guC4suC4p+C4tOC4iuC4suC4geC4suC4o+C4nuC4seC4kuC4meC4suC4oOC4ueC4oeC4tOC4quC4seC4h+C4hOC4oeC4reC4ouC5iOC4suC4h+C4ouC4seC5iOC4h+C4ouC4t+C4mSAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguYLguJcgIOC4quC4oeC4l+C4mqgBNjUzMDEyMzAgOiDguKfguLTguJfguKLguLLguKjguLLguKrguJXguKPguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIDQg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0jQE2OTEwMTE0MTUgOiDguIHguLLguKPguKrguYjguIfguYDguKrguKPguLTguKHguYHguKXguLDguKrguLfguYjguK3guKrguLLguKPguYDguIHguKnguJXguKMgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLSNATY5MTAxMTQxNCA6IOC4geC4suC4o+C4quC5iOC4h+C5gOC4quC4o+C4tOC4oeC5geC4peC4sOC4quC4t+C5iOC4reC4quC4suC4o+C5gOC4geC4qeC4leC4oyAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tI0BNjkxMDExNDEzIDog4LiB4Liy4Lij4Liq4LmI4LiH4LmA4Liq4Lij4Li04Lih4LmB4Lil4Liw4Liq4Li34LmI4Lit4Liq4Liy4Lij4LmA4LiB4Lip4LiV4LijIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0jQE2OTEwMTE0MTIgOiDguIHguLLguKPguKrguYjguIfguYDguKrguKPguLTguKHguYHguKXguLDguKrguLfguYjguK3guKrguLLguKPguYDguIHguKnguJXguKMgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLSNATY5MTAxMTQxMSA6IOC4geC4suC4o+C4quC5iOC4h+C5gOC4quC4o+C4tOC4oeC5geC4peC4sOC4quC4t+C5iOC4reC4quC4suC4o+C5gOC4geC4qeC4leC4oyAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tI0BNjkxMDExNDEwIDog4LiB4Liy4Lij4Liq4LmI4LiH4LmA4Liq4Lij4Li04Lih4LmB4Lil4Liw4Liq4Li34LmI4Lit4Liq4Liy4Lij4LmA4LiB4Lip4LiV4LijIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0jAE2OTEwMTE0OSA6IOC4geC4suC4o+C4quC5iOC4h+C5gOC4quC4o+C4tOC4oeC5geC4peC4sOC4quC4t+C5iOC4reC4quC4suC4o+C5gOC4geC4qeC4leC4oyAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tIwBNjkxMDExNDggOiDguIHguLLguKPguKrguYjguIfguYDguKrguKPguLTguKHguYHguKXguLDguKrguLfguYjguK3guKrguLLguKPguYDguIHguKnguJXguKMgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLSMATY5MTAxMTQ3IDog4LiB4Liy4Lij4Liq4LmI4LiH4LmA4Liq4Lij4Li04Lih4LmB4Lil4Liw4Liq4Li34LmI4Lit4Liq4Liy4Lij4LmA4LiB4Lip4LiV4LijIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0jAE2OTEwMTE0NiA6IOC4geC4suC4o+C4quC5iOC4h+C5gOC4quC4o+C4tOC4oeC5geC4peC4sOC4quC4t+C5iOC4reC4quC4suC4o+C5gOC4geC4qeC4leC4oyAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tIwBNjkxMDExNDUgOiDguIHguLLguKPguKrguYjguIfguYDguKrguKPguLTguKHguYHguKXguLDguKrguLfguYjguK3guKrguLLguKPguYDguIHguKnguJXguKMgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLSMATY5MTAxMTQ0IDog4LiB4Liy4Lij4Liq4LmI4LiH4LmA4Liq4Lij4Li04Lih4LmB4Lil4Liw4Liq4Li34LmI4Lit4Liq4Liy4Lij4LmA4LiB4Lip4LiV4LijIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0jAE2OTEwMTE0MyA6IOC4geC4suC4o+C4quC5iOC4h+C5gOC4quC4o+C4tOC4oeC5geC4peC4sOC4quC4t+C5iOC4reC4quC4suC4o+C5gOC4geC4qeC4leC4oyAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tIwBNjkxMDExNDIgOiDguIHguLLguKPguKrguYjguIfguYDguKrguKPguLTguKHguYHguKXguLDguKrguLfguYjguK3guKrguLLguKPguYDguIHguKnguJXguKMgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLSMATY5MTAxMTQxIDog4LiB4Liy4Lij4Liq4LmI4LiH4LmA4Liq4Lij4Li04Lih4LmB4Lil4Liw4Liq4Li34LmI4Lit4Liq4Liy4Lij4LmA4LiB4Lip4LiV4LijIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0jAE2OTEwMTE0MCA6IOC4geC4suC4o+C4quC5iOC4h+C5gOC4quC4o+C4tOC4oeC5geC4peC4sOC4quC4t+C5iOC4reC4quC4suC4o+C5gOC4geC4qeC4leC4oyAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tIwBNjcyMDExNDAgOiDguIHguLLguKPguKrguYjguIfguYDguKrguKPguLTguKHguYHguKXguLDguKrguLfguYjguK3guKrguLLguKPguYDguIHguKnguJXguKMgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguKrguKHguJfguJqMATY3MTAxMTQwIDog4LiB4Liy4Lij4Liq4LmI4LiH4LmA4Liq4Lij4Li04Lih4LmB4Lil4Liw4Liq4Li34LmI4Lit4Liq4Liy4Lij4LmA4LiB4Lip4LiV4LijIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0jAE2NjMwMTE0MCA6IOC4geC4suC4o+C4quC5iOC4h+C5gOC4quC4o+C4tOC4oeC5geC4peC4sOC4quC4t+C5iOC4reC4quC4suC4o+C5gOC4geC4qeC4leC4oyA0IOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tL4BNjk5MDExODYgOiDguJvguKPguLHguIrguI3guLLguJTguLjguKnguI7guLXguJrguLHguJPguJHguLTguJUgKOC4geC4suC4o+C4iOC4seC4lOC4geC4suC4o+C5geC4peC4sOC4nuC4seC4kuC4meC4suC4l+C4o+C4seC4nuC4ouC4suC4geC4oykgMyDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LmA4Lit4LiBIOC4quC4oeC4l+C4mr8BNjk4MDExODYgOiDguJvguKPguLHguIrguI3guLLguJTguLjguKnguI7guLXguJrguLHguJPguJHguLTguJUgKOC4geC4suC4o+C4iOC4seC4lOC4geC4suC4o+C5geC4peC4sOC4nuC4seC4kuC4meC4suC4l+C4o+C4seC4nuC4ouC4suC4geC4oykgMyDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LmA4Lit4LiBICDguJvguIHguJXguLScATY5MTAxMjUzIDog4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC5gOC4geC4qeC4leC4o+C4reC4tOC4meC4l+C4o+C4teC4ouC5jCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tJwBNjkxMDEyNTIgOiDguYDguIHguKnguJXguKPguKjguLLguKrguJXguKPguYwg4Lin4Li04LiK4Liy4LmA4Lit4LiB4LmA4LiB4Lip4LiV4Lij4Lit4Li04LiZ4LiX4Lij4Li14Lii4LmMIDIg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC4leC4o+C4tSAg4Lib4LiB4LiV4Li0nAE2OTEwMTI1MSA6IOC5gOC4geC4qeC4leC4o+C4qOC4suC4quC4leC4o+C5jCDguKfguLTguIrguLLguYDguK3guIHguYDguIHguKnguJXguKPguK3guLTguJnguJfguKPguLXguKLguYwgMiDguJvguLUg4Lib4Lij4Li04LiN4LiN4Liy4LiV4Lij4Li1ICDguJvguIHguJXguLScATY5MTAxMjUwIDog4LmA4LiB4Lip4LiV4Lij4Lio4Liy4Liq4LiV4Lij4LmMIOC4p+C4tOC4iuC4suC5gOC4reC4geC5gOC4geC4qeC4leC4o+C4reC4tOC4meC4l+C4o+C4teC4ouC5jCAyIOC4m+C4tSDguJvguKPguLTguI3guI3guLLguJXguKPguLUgIOC4m+C4geC4leC4tLcBNjU4MDEwNjQgOiDguJvguKPguLHguIrguI3guLLguJTguLjguKnguI7guLXguJrguLHguJPguJHguLTguJUg4Liq4Liy4LiC4Liy4Lin4Li04LiK4Liy4Liq4Lir4Lin4Li04LiX4Lii4Liy4LiB4Liy4Lij4LmA4LiB4Lip4LiV4LijIDMg4Lib4Li1IOC4m+C4o+C4tOC4jeC4jeC4suC5gOC4reC4gSAg4Lib4LiB4LiV4Li0FTQINjY2MDExMTIJNjkxMDEwMTE5CTY5MTAxMDExOAk2OTEwMTAxMTcJNjkxMDEwMTE2CTY5MTAxMDExNQk2OTEwMTAxMTQJNjkxMDEwMTEzCTY5MTAxMDExMgk2OTEwMTAxMTEJNjkxMDEwMTEwCDY5MTAxMDE5CDY5MTAxMDE4CDY5MTAxMDE3CDY5MTAxMDE2CDY5MTAxMDE1CDY5MTAxMDE0CDY5MTAxMDEzCDY5MTAxMDEyCDY5MTAxMDExCDY5MTAxMDEwCDY3ODAxMDE3CDY1NjAxMDIyCDY1MzAxMDIwCDY1NzAxMTYyCDY1MzAxMjMwCTY5MTAxMTQxNQk2OTEwMTE0MTQJNjkxMDExNDEzCTY5MTAxMTQxMgk2OTEwMTE0MTEJNjkxMDExNDEwCDY5MTAxMTQ5CDY5MTAxMTQ4CDY5MTAxMTQ3CDY5MTAxMTQ2CDY5MTAxMTQ1CDY5MTAxMTQ0CDY5MTAxMTQzCDY5MTAxMTQyCDY5MTAxMTQxCDY5MTAxMTQwCDY3MjAxMTQwCDY3MTAxMTQwCDY2MzAxMTQwCDY5OTAxMTg2CDY5ODAxMTg2CDY5MTAxMjUzCDY5MTAxMjUyCDY5MTAxMjUxCDY5MTAxMjUwCDY1ODAxMDY0FCsDNGdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIODw9kDxAWAWYWARYCHg5QYXJhbWV0ZXJWYWx1ZQUBMRYBZmRkAhAPD2QPEBYCZgIBFgIWAh8BBQExFgIfAQUEMjU2ORYCZmZkZAIBDw9kDxAWAWYWARYCHwEFAzQyNRYBZmRkZEfTOOVlNNElv7YiapFBu5Zn+KINz50kkcxfYKGCuIk7" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48DA28C6" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="logo-section">
+                <div class="logo">
+<img src="img/mju_logo.png" />
+                </div>
+                <div class="org-name">
+                    <h1>สำนักบริหารและพัฒนาวิชาการ</h1>
+                    <p>Office of Academic Administration and Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a target='_self' href='Default.aspx'>หน้าแรก</a></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>สมัครเรียน <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_blank' href='http://www.admissions.mju.ac.th/'><i class='fa fa-angle-right'></i> สมัครเรียนระดับ ป.ตรี</a></li><li><a target='_blank' href='https://admissions.mju.ac.th/graduate/Default.aspx'><i class='fa fa-angle-right'></i> สมัครเรียนระดับ ป.โท-เอก</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ระบบสารสนเทศ <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_blank' href='../Student'><i class='fa fa-angle-right'></i> สำหรับนักศึกษา</a></li><li><a target='_blank' href='../informationSystem'><i class='fa fa-angle-right'></i> สำหรับบุคลากร</a></li><li><a target='_blank' href='../Parent'><i class='fa fa-angle-right'></i> สำหรับผู้ปกครอง</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ข้อมูล <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='ProgramInfo.aspx'><i class='fa fa-angle-right'></i> หลักสูตรที่เปิดสอน</a></li><li><a target='_self' href='StudentList.aspx'><i class='fa fa-angle-right'></i> รายชื่อนักศึกษา</a></li><li><a target='_self' href='../ExamSchedule'><i class='fa fa-angle-right'></i> ตารางสอบ & ตารางกำกับห้องสอบ</a></li><li><a target='_self' href='GraduateList.aspx'><i class='fa fa-angle-right'></i> รายชื่อผู้สำเร็จการศึกษา</a></li><li><a target='_self' href='GraduateQualificationCheck.aspx'><i class='fa fa-angle-right'></i> ตรวจสอบคุณวุฒิผู้สำเร็จการศึกษา</a></li><li><a target='_self' href='CourseDescription.aspx'><i class='fa fa-angle-right'></i> คำอธิบายรายวิชา</a></li><li><a target='_self' href='Document.aspx?sID=1&gID=4'><i class='fa fa-angle-right'></i> ระเบียบ ประกาศ ข้อบังคับ</a></li><li><a target='_self' href='ProgramList.aspx'><i class='fa fa-angle-right'></i> แผนการศึกษา ป.ตรี</a></li><li><a target='_blank' href='../Stat'><i class='fa fa-angle-right'></i> ข้อมูลสถิติ</a></li><li><a target='_self' href='Search.aspx'><i class='fa fa-angle-right'></i> ค้นหาภายในเว็บไซต์</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>เอกสาร <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='DocumentGroup.aspx?sID=1'><i class='fa fa-angle-right'></i> เอกสารฝ่ายหลักสูตร</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=2'><i class='fa fa-angle-right'></i> เอกสารฝ่ายทะเบียน</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=4'><i class='fa fa-angle-right'></i> เอกสารฝ่ายสหกิจศึกษา</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=3'><i class='fa fa-angle-right'></i> เอกสารฝ่ายบัณฑิตศึกษา</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=5'><i class='fa fa-angle-right'></i> เอกสารกองบริหารงานสำนักฯ</a></li><li><a target='_self' href='DocumentSearch.aspx'><i class='fa fa-angle-right'></i> ค้นหาเอกสาร</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>แบบฟอร์ม <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='../www/Document.aspx?sID=6&gID=1'><i class='fa fa-angle-right'></i> แบบฟอร์มสำหรับนักศึกษา</a></li><li><a target='_self' href='Document.aspx?sID=7&gID=7'><i class='fa fa-angle-right'></i> แบบฟอร์มสำหรับอาจารย์</a></li><li><a target='_self' href='DocumentGroup.aspx?sID=1'><i class='fa fa-angle-right'></i> แบบฟอร์มเอกสาร มคอ.</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ปฏิทิน <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='../www/Document.aspx?sID=2&gID=13'><i class='fa fa-angle-right'></i> ปฏิทินการศึกษา</a></li><li><a target='_self' href='../www/Document.aspx?sID=2&gID=41'><i class='fa fa-angle-right'></i> รอบอนุมัติสำเร็จการศึกษา</a></li><li><a target='_self' href='/www/Document.aspx?sID=1&gID=19'><i class='fa fa-angle-right'></i> ปฏิทินดำเนินการ มคอ.</a></li></ul></li><li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>ข้อมูลสำนัก <span class='caret'></span></a><ul Class='dropdown-menu'><li><a target='_self' href='Staff.aspx'><i class='fa fa-angle-right'></i> บุคลากรสำนัก</a></li><li><a target='_self' href='About.aspx'><i class='fa fa-angle-right'></i> ข้อมูลสำนัก</a></li><li><a target='_self' href='Contact.aspx'><i class='fa fa-angle-right'></i> ติดต่อสำนัก</a></li><li><a target='_self' href='DirectLine.aspx'><i class='fa fa-angle-right'></i> สายตรงผู้อำนวยการ</a></li></ul></li><li><a target='_blank' href='newsLetterList.aspx'>จดหมายข่าว</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div style="min-height:500px">
+            
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">รายชื่อนักศึกษา (List of Student)</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default" style="border: 2px solid #4CAF50; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                        <div class="panel-heading" style="background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%); color: white;">
+                            <h4 class="panel-title"><i class="fa fa-user"></i> รายชื่อนักศึกษา</h4>
+                        </div>
+                        <div class="panel-body" style="padding: 30px;">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sendertxt">คณะ</label>
+                                        <select name="ctl00$ContentPlaceHolder1$facultydl" id="ctl00_ContentPlaceHolder1_facultydl" class="form-control">
+	<option selected="selected" value="1">ผลิตกรรมการเกษตร</option>
+	<option value="3">วิศวกรรมและอุตสาหกรรมเกษตร</option>
+	<option value="4">วิทยาศาสตร์</option>
+	<option value="5">วิทยาลัยบริหารศาสตร์</option>
+	<option value="6">บริหารธุรกิจ</option>
+	<option value="7">มหาวิทยาลัยแม่โจ้-ชุมพร</option>
+	<option value="8">มหาวิทยาลัยแม่โจ้ - แพร่ เฉลิมพระเกียรติ</option>
+	<option value="9">พัฒนาการท่องเที่ยว</option>
+	<option value="10">เทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+	<option value="12">เศรษฐศาสตร์</option>
+	<option value="14">ศิลปศาสตร์</option>
+	<option value="15">วิทยาลัยพลังงานทดแทน</option>
+	<option value="16">วิทยาลัยนานาชาติ</option>
+	<option value="18">สารสนเทศและการสื่อสาร</option>
+	<option value="19">สถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม</option>
+	<option value="22">สัตวศาสตร์และเทคโนโลยี</option>
+	<option value="30">พยาบาลศาสตร์</option>
+	<option value="31">สัตวแพทยศาสตร์</option>
+
+</select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sendertxt">ปีเข้าศึกษา</label>
+                                        <select name="ctl00$ContentPlaceHolder1$acadyeardl" id="ctl00_ContentPlaceHolder1_acadyeardl" class="form-control">
+	<option selected="selected" value="2569">2569</option>
+	<option value="2568">2568</option>
+	<option value="2567">2567</option>
+	<option value="2566">2566</option>
+	<option value="2565">2565</option>
+	<option value="2564">2564</option>
+	<option value="2563">2563</option>
+	<option value="2562">2562</option>
+	<option value="2561">2561</option>
+	<option value="2560">2560</option>
+	<option value="2559">2559</option>
+	<option value="2558">2558</option>
+	<option value="2557">2557</option>
+	<option value="2556">2556</option>
+	<option value="2555">2555</option>
+	<option value="2554">2554</option>
+	<option value="2553">2553</option>
+	<option value="2552">2552</option>
+	<option value="2551">2551</option>
+	<option value="2550">2550</option>
+	<option value="2549">2549</option>
+	<option value="2548">2548</option>
+	<option value="2547">2547</option>
+	<option value="2546">2546</option>
+	<option value="2545">2545</option>
+	<option value="2544">2544</option>
+	<option value="2543">2543</option>
+	<option value="2542">2542</option>
+	<option value="2541">2541</option>
+	<option value="2540">2540</option>
+	<option value="2539">2539</option>
+	<option value="2538">2538</option>
+	<option value="2537">2537</option>
+	<option value="2536">2536</option>
+	<option value="2535">2535</option>
+	<option value="2534">2534</option>
+	<option value="2533">2533</option>
+	<option value="2532">2532</option>
+	<option value="2531">2531</option>
+	<option value="2530">2530</option>
+	<option value="2529">2529</option>
+	<option value="2528">2528</option>
+	<option value="2527">2527</option>
+	<option value="2526">2526</option>
+	<option value="2525">2525</option>
+	<option value="2524">2524</option>
+	<option value="2523">2523</option>
+	<option value="2522">2522</option>
+	<option value="2521">2521</option>
+	<option value="2520">2520</option>
+	<option value="2519">2519</option>
+	<option value="2518">2518</option>
+
+</select>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sendertxt">ระบุหลักสูตร</label>
+               <select name="ctl00$ContentPlaceHolder1$programdl" id="ctl00_ContentPlaceHolder1_programdl" class="form-control">
+	<option value="66601112">66601112 : ปฐพีศาสตร์ 2 ปี ปริญญาโท  ปกติ</option>
+	<option value="691010119">691010119 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010118">691010118 : วิทยาศาสตรบัณฑิต สาข��วิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010117">691010117 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010116">691010116 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010115">691010115 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010114">691010114 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010113">691010113 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010112">691010112 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010111">691010111 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691010110">691010110 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101019">69101019 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101018">69101018 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101017">69101017 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101016">69101016 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101015">69101015 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101014">69101014 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101013">69101013 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101012">69101012 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101011">69101011 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101010">69101010 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ วิชาเอกพืชไร่ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="67801017">67801017 : พืชไร่ 5 ปี ปริญญาเอก  ปกติ</option>
+	<option value="65601022">65601022 : วิทยาศาสตรมหาบัณฑิต สาขาวิชาพืชสวน 2 ปี ปริญญาโท  ปกติ</option>
+	<option value="65301020">65301020 : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาพืชสวน 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65701162">65701162 : วิทยาศาสตรมหาบัณฑิต สาขาวิชาการพัฒนาภูมิสังคมอย่างยั่งยืน 2 ปี ปริญญาโท  สมทบ</option>
+	<option value="65301230">65301230 : วิทยาศาสตรบัณฑิต สาขาวิชาเกษตรศาสตร์ 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691011415">691011415 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691011414">691011414 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691011413">691011413 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691011412">691011412 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691011411">691011411 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="691011410">691011410 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101149">69101149 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101148">69101148 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101147">69101147 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101146">69101146 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101145">69101145 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101144">69101144 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101143">69101143 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101142">69101142 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101141">69101141 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101140">69101140 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="67201140">67201140 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  สมทบ</option>
+	<option value="67101140">67101140 : การส่งเสริมและสื่อสารเกษตร 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="66301140">66301140 : การส่งเสริมและสื่อสารเกษตร 4 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69901186">69901186 : ปรัชญาดุษฎีบัณฑิต (การจัดการและพัฒนาทรัพยากร) 3 ปี ปริญญาเอก สมทบ</option>
+	<option value="69801186">69801186 : ปรัชญาดุษฎีบัณฑิต (การจัดการและพัฒนาทรัพยากร) 3 ปี ปริญญาเอก  ปกติ</option>
+	<option value="69101253">69101253 : เกษตรศาสตร์ วิชาเอกเกษตรอินทรีย์ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101252">69101252 : เกษตรศาสตร์ วิชาเอกเกษตรอินทรีย์ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101251">69101251 : เกษตรศาสตร์ วิชาเอกเกษตรอินทรีย์ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="69101250">69101250 : เกษตรศาสตร์ วิชาเอกเกษตรอินทรีย์ 2 ปี ปริญญาตรี  ปกติ</option>
+	<option value="65801064">65801064 : ปรัชญาดุษฎีบัณฑิต สาขาวิชาสหวิทยาการเกษตร 3 ปี ปริญญาเอก  ปกติ</option>
+
+</select> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$Button1" value="ตกลง" id="ctl00_ContentPlaceHolder1_Button1" class="btn btn-submit btn-lg" />
+                            </div>
+
+                            <div class="text-center" style="margin-top:20px">
+                                <span id="ctl00_ContentPlaceHolder1_linklb"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+              
+        
+                
+
+
+            </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row" style="text-align:left;">
+                <div class="col-md-4">
+                    <h4 style="color:#fff">สำนักบริหารและพัฒนาวิชาการ</h4>
+                    <p>มหาวิทยาลัยแม่โจ้</p>
+                    <p><i class="fa fa-map-marker"></i> เลขที่ 63 หมู่ที่ 4 <br/>อาคารอำนวย ยศสุข ชั้น 2-3<br/> ตำบลหนองหาร อำเภอสันทราย<br/>จังหวัดเชียงใหม่ 50290</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color:#fff">ติดต่อเรา</h4>
+                    <p><i class="fa fa-phone"></i> กองบริหารงานสำนัก 053-873450 และ 053-873452</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายทะเบียน 053-873458 และ 053-873459</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายพัฒนาการศึกษาและหลักสูตร 053-873453-5</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายสหกิจศึกษา 053-873476-9</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color:#fff">ติดต่อเรา</h4>                    
+                    <p><i class="fa fa-phone"></i> ฝ่ายบัณฑิตศึกษา 053-875520-4</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายรับสมัครนักศึกษาใหม่ ระดับบัณฑิตศึกษา (ป.โท-เอก) 053-873461</p>
+                    <p><i class="fa fa-phone"></i> ฝ่ายรับสมัครนักศึกษาใหม่ ระดับปริญญาตรี 053-873460</p>
+                    <p><i class="fa fa-phone"></i> งานสื่อสิ่งพิมพ์ 053-873476-7</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.3); margin: 30px 0 20px;" />
+            <div style="text-align: center;">
+                <p>&copy; 2025 Office of Academic Administration and Development. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+  
+<input type="hidden" name="ctl00$subMenuIdlb" id="ctl00_subMenuIdlb" value="425" />
+
+<script src="js/new/jquery.min.js"></script>
+<script src="js/new/bootstrap.min.js"></script>
+
+    </form>
+</body>
+</html>
