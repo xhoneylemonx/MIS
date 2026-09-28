@@ -54,10 +54,21 @@ export async function addInterestToStudent(studentId: string, interestId: string
       data: { studentId, interestId },
     });
 
+    const otherStudents = await prisma.studentInterest.findMany({
+      where: { interestId, studentId: { not: studentId } },
+      include: { student: true },
+      take: 5
+    });
+    const matchedStudents = otherStudents.map(os => ({
+        id: os.student.id,
+        name: os.student.name,
+        studentId: os.student.studentId
+    }));
+
     revalidatePath("/profile");
     revalidatePath("/discover");
     revalidatePath("/matches");
-    return { success: true };
+    return { success: true, matchedStudents };
   } catch (error) {
     console.error("addInterestToStudent error:", error);
     return { success: false, error: "Failed to add interest" };
@@ -118,8 +129,20 @@ export async function createCustomInterest(
       await prisma.studentInterest.create({
         data: { studentId, interestId: existing.id },
       });
+
+      const otherStudents = await prisma.studentInterest.findMany({
+        where: { interestId: existing.id, studentId: { not: studentId } },
+        include: { student: true },
+        take: 5
+      });
+      const matchedStudents = otherStudents.map(os => ({
+          id: os.student.id,
+          name: os.student.name,
+          studentId: os.student.studentId
+      }));
+
       revalidatePath("/profile");
-      return { success: true, interestId: existing.id };
+      return { success: true, interestId: existing.id, matchedStudents };
     }
 
     // Verify category exists

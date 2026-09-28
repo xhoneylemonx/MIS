@@ -55,6 +55,7 @@ export function CreateActivityClient({
         });
 
         if (res.success && res.activityId) {
+            alert("สร้าง Activity สำเร็จ!");
             router.push(`/activities/${res.activityId}`);
             router.refresh();
         } else {

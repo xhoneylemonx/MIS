@@ -102,11 +102,16 @@ export function DiscoverClient({
 
     return (
         <div className="max-w-6xl mx-auto space-y-6">
-            <div>
-                <h1 className="text-2xl font-bold">🔍 Discover</h1>
-                <p className="text-muted-foreground mt-1">
-                    ค้นหานักศึกษาที่มีความสนใจคล้ายกัน
-                </p>
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div>
+                    <h1 className="text-2xl font-bold">👥 ค้นหาเพื่อน (Discover)</h1>
+                    <p className="text-muted-foreground mt-1">
+                        ค้นหานักศึกษาที่มีความสนใจคล้ายกัน หรือหาเพื่อนในสายเดียวกัน
+                    </p>
+                </div>
+                <Link href="/profile" className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary font-medium rounded-xl hover:bg-primary/20 transition-colors text-sm border border-primary/20">
+                    <span className="text-lg">🎯</span> เพิ่มความสนใจเพื่อสร้าง Match
+                </Link>
             </div>
 
             {/* Search & Filters */}

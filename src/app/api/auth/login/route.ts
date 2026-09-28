@@ -33,18 +33,34 @@ export async function POST(req: NextRequest) {
 
     // Also support "student@example.com" as a demo login
     if (emailLower === "student@example.com") {
-      // Find the first student as demo
-      const firstStudent = await prisma.student.findFirst({
-        orderBy: { createdAt: "asc" },
+      // Find the specific student requested by the user
+      let targetStudent = await prisma.student.findFirst({
+        where: {
+          studentId: { contains: "363" }
+        }
       });
-      if (firstStudent) {
+
+      if (!targetStudent) {
+         // Fallback if no 363 student exists, use first student
+         targetStudent = await prisma.student.findFirst({ orderBy: { createdAt: "asc" } });
+      }
+
+      if (targetStudent) {
+        // Ensure name is correct
+        if (targetStudent.name !== "ภาณุพงษ์ เวียงห้า") {
+          targetStudent = await prisma.student.update({
+            where: { id: targetStudent.id },
+            data: { name: "ภาณุพงษ์ เวียงห้า" }
+          });
+        }
+
         return NextResponse.json({
           user: {
-            id: firstStudent.id,
+            id: targetStudent.id,
             email: emailLower,
             role: "student",
-            studentId: firstStudent.id, // Real DB UUID
-            name: firstStudent.name,
+            studentId: targetStudent.id, // Real DB UUID
+            name: targetStudent.name,
             avatar: "",
           },
         });
